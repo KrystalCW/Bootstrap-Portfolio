@@ -1,9 +1,19 @@
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
 body {
     font-family: 'EB Garamond', serif;
     background-attachment: fixed;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    font-size: 18px;
+    line-height: 27px;
     /* display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -15,8 +25,19 @@ body {
     } */
 }
 
+.wrapper {
+    min-height: 100%;
+    height: 100%;
+    margin: 0 auto -45px; /* the bottom margin is the negative value of the footer's height */
+    margin-bottom: 30px;
+}
+
+.footer, .push {
+    height: 45px; /* .push must be the same height as .footer */
+}
+
 #index-bg {
-    background-color: black;
+    background-color: #202e12;
     background-image: url("../images/yosemite.jpg");
 }
 
@@ -29,12 +50,22 @@ body {
 
 .main-content {
     color: #ffffff;
+    margin-top: 40px;
 }
 
 .navbar {
     margin-top: 1%;
-    width: 100% !important;
 }
+
+.navbar navbar-expand-lg navbar-light bg-light {
+    background-color: rgba(247,178,99, .5);
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
 
 #intro {
     color: #ffffff;
@@ -47,6 +78,7 @@ body {
 
 #about-me {
     color: #424927;
+    margin-bottom: 20px;
     /* background-color: rgba(255,224,178, .5);
     background: linear-gradient(to right, 
     rgba(255,224,178,0) 0%, 
@@ -70,13 +102,16 @@ body {
     /* rgba(165,145,123, .5) --> rosy brown color */
 }
 
+#bio-info {
+    text-emphasis-style: strong;
+}
+
 #attribute {
     text-align: right;
     font-style: normal;
 }
 
 #enter-button {
-    /* margin-left: 75%; */
     margin-bottom: 10%;
 }
 
@@ -94,8 +129,94 @@ body {
     width: auto;
     height: auto;
     float: left;
+    margin-right: 1%;
+    margin-bottom: 1%;
 }
 
 p {
-    float: left;
+    display: block;
+}
+
+.footer {
+    height: 45px;
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    body {
+        background-size: auto;
+    }
+    .wrapper {
+        height: 100%;
+        padding: 20px;
+    }
+
+    #about-me {
+        margin-bottom: 40px;
+        text-align: justify;
+    }
+
+    #bio-image {
+        float: none;
+        display: block;
+        margin: 0 auto; 
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    
+    body {
+        background-size: auto;
+    }
+
+    #intro {
+        background-color: rgba(32,46,18,.7);
+    }
+
+    .wrapper {
+        height: 100%;
+        padding: 20px;
+    }
+
+    #about-me {
+        margin-bottom: 40px;
+        text-align: justify;
+    }
+
+    #bio-image {
+        float: none;
+        display: block;
+        margin: 0 auto; 
+    }
+
+}
+
+@media screen and (max-width: 168px) {
+    
+    body {
+        background-size: auto;
+    }
+
+    #intro {
+        background-color: #202e12;
+    }
+
+    .wrapper {
+        height: 100%;
+        padding: 20px;
+    }
+
+    #about-me {
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+
+    #bio-image {
+        float: none;
+        display: block;
+        margin: 0 auto; 
+    }
+
 }
