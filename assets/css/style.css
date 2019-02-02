@@ -142,6 +142,8 @@ p {
 
 .footer {
     height: 45px;
+    background-color: rgba(247,178,99, .5);
+    color: #424927;
 }
 
 
