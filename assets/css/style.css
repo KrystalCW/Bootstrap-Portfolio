@@ -44,13 +44,11 @@ body {
 .about-bg {
     background-color: #403b31;
     background-image: url("../images/black-hills-opaque.jpg");
-    /* opacity: 0.5;
-    filter: alpha(opacity=50); */
 }
 
 .main-content {
-    color: #424927;
     margin-bottom: 45px;
+    color: #424927;
 }
 
 #intro-page {
@@ -59,7 +57,11 @@ body {
 
 .navbar {
     margin-top: 1%;
+}
+
+#color {
     background-color: rgba(247,178,99, .5);
+    color: #424927;
 }
 
 .col-centered {
@@ -71,8 +73,6 @@ body {
 #intro {
     color: #ffffff;
     font-style: italic;
-    /* max-width: 750px;
-    margin-left: 65%; */
     margin-bottom: 20px;
     font-size: large;
 }
@@ -113,6 +113,9 @@ body {
 
 #enter-button {
     margin-bottom: 10%;
+    background-color: white;
+    color: #424927;
+    border-color: #424927;
 }
 
 /* .footer-margin {
@@ -190,6 +193,7 @@ p {
         display: block;
         margin: 0 auto; 
     }
+
 
 }
 
