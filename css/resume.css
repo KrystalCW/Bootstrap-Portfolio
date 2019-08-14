@@ -83,6 +83,11 @@ p.lead {
   color: #9e8ede;
 }
 
+.projects {
+  max-width: 300px;
+  margin-bottom: 10px;
+}
+
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 800;
   letter-spacing: 0.05rem;
